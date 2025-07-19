@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Contact Us </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet" />
+  <script defer>
+    // Mobile nav toggle
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-blue-900 text-white">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="/index.html" class="font-bold text-lg">Carlo Acutis Ireland</a>
+    <button class="md:hidden" onclick="toggleMenu()">☰</button>
+    <nav class="hidden md:flex space-x-4">
+      <a href="/about.html" class="hover:underline">About</a>
+      <a href="/youth.html" class="hover:underline">Youth</a>
+      <a href="/resourcesoutreach.html" class="hover:underline">Resources</a>
+      <a href="/relicvisit.html" class="hover:underline">Relic</a>
+      <a href="/schoolworkshops.html" class="hover:underline">Workshops</a>
+      <a href="/contact.html" class="hover:underline">Contact</a>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+    <a href="/about.html" class="block text-white">About</a>
+    <a href="/youth.html" class="block text-white">Youth</a>
+    <a href="/resourcesoutreach.html" class="block text-white">Resources</a>
+    <a href="/relicvisit.html" class="block text-white">Relic</a>
+    <a href="/schoolworkshops.html" class="block text-white">Workshops</a>
+    <a href="/contact.html" class="block text-white">Contact</a>
+  </div>
+</header>
+  <main class="container mx-auto px-4 py-8">
+    
+  <h2 class="text-2xl font-semibold mb-6">Contact</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4 max-w-xl">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full border p-2 rounded" />
+    <input type="email" name="email" placeholder="Your Email" required class="w-full border p-2 rounded" />
+    <textarea name="message" rows="5" placeholder="Your Message" required class="w-full border p-2 rounded"></textarea>
+    <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Send</button>
+  </form>
+
+  </main>
+  <footer class="bg-gray-100 text-center text-sm text-gray-600 py-6 mt-10">
+  &copy; 2025 Carlo Acutis Ireland. All rights reserved.
+</footer>
+</body>
+</html>
