@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: carlo-acutis-ireland
+    env:
+      - NODE_VERSION: 16
+    build:
+      command: npm install && npm run build
+    start:
+      command: npm run preview
+    routes:
+      - type: rewrite
+        source: /assets/*
+        destination: /assets/*
+      - type: rewrite
+        source: /*
+        destination: /index.html
